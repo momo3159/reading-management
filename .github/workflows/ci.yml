@@ -12,7 +12,7 @@ jobs:
   unit_test:
     steps: 
       - uses: actions/checkout@v2
-        - run: yarn add -D typesync
-        - run: yarn && yarn test
+        run: yarn add -D typesync
+        run: yarn && yarn test
     
 
