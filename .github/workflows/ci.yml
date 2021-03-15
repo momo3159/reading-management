@@ -2,14 +2,17 @@ name: CI
 
 on: 
   pull_request:
-    branches: [dev]
+    branches: 
+      - dev
   push:
-    branches: ["issue[0-9]+"]
+    branches: 
+      - 'issue[0-9]+'
 
 jobs: 
-  test:
+  unit_test:
+  steps: 
     - uses: actions/checkout@v2
-     - run: yarn add -D typesync
-     - run: yarn && yarn test
+      - run: yarn add -D typesync
+      - run: yarn && yarn test
   
 
