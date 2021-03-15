@@ -109,6 +109,7 @@ module.exports = {
         classPropertiesAllowed: false,
       },
     ],
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   overrides: [
     {
