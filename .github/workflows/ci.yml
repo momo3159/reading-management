@@ -1,0 +1,15 @@
+name: CI
+
+on: 
+  pull_request:
+    branches: [dev]
+  push:
+    branches: ["issue[0-9]+"]
+
+jobs: 
+  test:
+    - uses: actions/checkout@v2
+     - run: yarn add -D typesync
+     - run: yarn && yarn test
+  
+
