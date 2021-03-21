@@ -1,0 +1,24 @@
+name: CI
+
+on: 
+  pull_request:
+    branches: 
+      - dev
+  push:
+    branches: 
+      - 'issue[0-9]+'
+
+jobs: 
+  unit_test:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+
+      - name: typesync
+        run: |
+          yarn add -D typesync
+
+      - name: start test
+        run: | 
+          yarn && yarn test
+    
