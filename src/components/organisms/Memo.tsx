@@ -8,7 +8,7 @@ export type Props = {
 
 const breakpoints = [600, 960, 1264];
 const mediaQuery = breakpoints.map((bp) => `@media(min-width: ${bp}px)`);
-const cutText = (text: string) => {
+export const cutText = (text: string) => {
   const texts = [];
   for (let count = 0; count <= 3; count += 1) {
     if (text[count * 20] === undefined) {
