@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Button from './components/atoms/Button';
 import './App.css';
 
 const App = () => (
@@ -16,6 +17,12 @@ const App = () => (
       >
         Learn React
       </a>
+      <Button
+        text="読了"
+        backgroundColor="black"
+        padding="20px 40px"
+        borderRadius="40px"
+      />
     </header>
   </div>
 );

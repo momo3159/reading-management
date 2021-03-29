@@ -109,7 +109,11 @@ module.exports = {
         classPropertiesAllowed: false,
       },
     ],
-    "@typescript-eslint/explicit-module-boundary-types": "off"                                      
+    "@typescript-eslint/explicit-module-boundary-types": "off",  
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/jsx-props-no-spreading": "off",
+
   },
   overrides: [
     {
